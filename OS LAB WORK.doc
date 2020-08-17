@@ -1,0 +1,46 @@
+﻿echo "What is your name?"
+name="Pranjul"
+echo "Hello, $name"
+echo "What is your name?"
+read PERSON
+echo "Hello, $PERSON"
+
+
+
+
+#Even Odd program
+echo "Enter a Number"
+read Num
+rem=`expr $Num % 2`
+if [ $rem -eq 0 ]
+then 
+    echo "$Num is even number"
+else
+    echo "$Num is odd number"
+ fi   
+ 
+
+
+
+
+ #sum of two numbers
+ echo "Enter 2 number"
+num1=10
+num2=20
+sum=`expr $num1 + $num2`
+echo "Sum of numbers $num1 and $num2 = $sum"
+
+
+
+
+#Leap year program
+echo "Enter a year"
+year=2020
+rem=`expr $year % 4`
+rem2=`expr $year % 100`
+if [ $rem -eq 0 -a $rem2 -ne 0 ]
+then 
+   echo "$year is leap year "
+else 
+   echo "$year is not a leap year"
+fi
